@@ -1,7 +1,38 @@
 import React from 'react'
 import { useReducer } from 'react'
 
+function UserForm() {
+  const [state, dispatch] = useReducer(
+    (state, action) => ({
+      ...state,
+      ...action
+    }),
+    {
+      firstName: "",
+      lastName: "",
+    });
 
+  return (
+    <div>
+      <input
+        type='text'
+        value={state.firstName}
+        onChange={(e) => dispatch({firstName: e.target.value })}
+      />
+      <input
+        type='text'
+        value={state.lastName}
+        onChange={(e) => dispatch({lastName: e.target.value })}
+      />
+      <div>
+        First Name: {state.firstName}
+      </div>
+      <div>
+        LastName: {state.lastName}
+      </div>
+    </div>
+  )
+}
 function NameList() {
   const [state, dispatch] = useReducer(
     (state, action) => { 
@@ -21,10 +52,9 @@ function NameList() {
   })
   return (
     <div className="App">
-      <div>{
-        state.names.map((name, index) => {
-          <div key={index}>{name}</div>
-          
+      <div>
+        {state.names.map((name, index) => {
+          <div key={index}>{name}</div>          
         })       
       }</div>
       
@@ -44,6 +74,7 @@ function NameList() {
 function App() {
   return (
     <div>
+      <UserForm />
       <NameList/>
     </div>
   )
