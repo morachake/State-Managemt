@@ -38,11 +38,7 @@ Here is an example of a simple counter using useState
     
 
 in the code above 
-    1. The component is rendered for the first time with a state value of ’0’ as 
-        the initial value
-    2. Once the user clicks on the button an onClick event handler is called 
-        which calls the setCount function, where  setCount has an updated state 
-        value of “count + 1 “ 
+    1. The component is rendered for the first time with a state value of ’0’ as the initial value
+    2. Once the user clicks on the button an onClick event handler is called which calls the setCount function, where  setCount has an updated state value of “count + 1 “ 
     3. the component re-renders with a state value of “1”
-    4. if the user clicks the button again the setCount function is called with an
-         updated value of “1 + 1” and re-renders with an updated value of “2” 
+    4. if the user clicks the button again the setCount function is called with an updated value of “1 + 1” and re-renders with an updated value of “2” 
