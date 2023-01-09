@@ -1,5 +1,8 @@
-UseState
-useState is a react Hook that lets you add a static variable to a component. It helps track of state in a function component
+
+
+useState
+
+A react Hook lets you add a static variable to a component. It helps track of state in a function component
 It takes a single parameter: an initial state which is the initial value of the state variable 
 To use the UseState  Hook we first have to import it from React
 
@@ -20,6 +23,7 @@ Here is an example of a simple counter using useState
     import { useState } from 'react';
     
     function Example() {
+      // Declare a new state variable, which we'll call "count"
       const [count, setCount] = useState(0);
     
       return (
