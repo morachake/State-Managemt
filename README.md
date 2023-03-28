@@ -1,6 +1,6 @@
 # State Management in React
 
-# managing state in react
+# managing state in react using redux, context API ...
 
 *In React, state refers to a component's internal data. State management is the process of managing the state of a component used to store data that can be used to determine the output of the component. The state can be changed by interacting with the component, such as by clicking a button or filling out a form.*
  *There are several types of state that you may need to manage in a React app. These include:*
