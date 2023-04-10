@@ -1,4 +1,4 @@
-# State Management in React
+# State Management in React and ReactNative apps
 
 # managing state in react using redux, context API ...
 
