@@ -1,8 +1,8 @@
 # State Management in React and ReactNative apps
 
-# managing state in react using redux, context API ...
+# managing state in React using Redux, context API...
 
-*In React, state refers to a component's internal data. State management is the process of managing the state of a component used to store data that can be used to determine the output of the component. The state can be changed by interacting with the component, such as by clicking a button or filling out a form.*
+In React, state refers to a component's internal data. State management is the process of managing the state of a component used to store data that can be used to determine the output of the component. The state can be changed by interacting with the component, such as by clicking a button or filling out a form.*
  *There are several types of state that you may need to manage in a React app. These include:*
  
 ***Local state:*** *This refers to the state that is specific to a single component and is not shared with other components. Local state is often used to store data that is only relevant to the component and does not need to be accessed by other parts of the app.*
@@ -100,7 +100,7 @@ in the code above :
 
         import {useReducer} from 'react
 
-*The useReducer Hook acceps two parameters : a reducer function and the initial state*
+*The useReducer Hook accepts two parameters : a reducer function and the initial state*
 
     i.e    useReducer(<reducer>,<initialState>)
 
