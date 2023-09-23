@@ -112,7 +112,7 @@ in the code above :
 *The dispatch function returned by useReducer is used to update the state to a different value and trigger a re-render.*
 *An Action is an object dispatched to the reducer function. It has a type property indicating the type of* 
 *action  to be performed or data to update the state*
-    *example:*
+    *Example:*
         **
 
                   const [state,dispatch]= useReducer(reducer,{books:"23"});
@@ -121,7 +121,7 @@ in the code above :
     })  }
 
  **       *in the above Example code:*
-        *the useReducer hook is being passed a reducer function called reducer, and an initial state object*
+        *The useReducer hook is being passed a reducer function called reducer, and an initial state object*
         *books with  23 as an initial value. The hook returns an array with the current state and a dispatch method, destructured into the variables state and dispatch.*
         *The INCRIMENT_BOOKS function is then defined and dispatches an action to the reducer by calling the dispatch method with an object with a type property. The reducer function will receive this action and update the state accordingly by incrementing the value of books.*
 
@@ -135,7 +135,7 @@ If at least one of the dependencies has changed, the function passed to useMemo 
 
 It's also worth noting that useMemo doesn't change the behavior of the component; it simply improves its performance. It's not required, but it's a good idea to use it when you have a component that requires expensive computation and don't want to recompute it on every render.
 
-It is critical to be aware of what you are memoizing and what dependencies you are passing, as passing too many or the incorrect dependencies can result in unexpected behavior. It's also critical to ensure that the value you're memoizing isn't a new object on every render, as this will prevent the previous and next states from being compared, resulting in unnecessary re-renders.
+It is critical to be aware of what you are memoizing and what dependencies you are passing, as passing too many or incorrect dependencies can result in unexpected behavior. It's also critical to ensure that the value you're memoizing isn't a new object on every render, as this will prevent the previous and next states from being compared, resulting in unnecessary re-renders.
 
 # useCallback
 # *What is useCallBack ?*
@@ -145,4 +145,4 @@ The React Hook useCallback allows you to memoize a callback function. It can be 
 The main objective of useCallback is to avoid the unnecessary re-creation of callback functions. When a callback function is recreated, the component that depends on it must re-render, which can have a negative impact on performance. By using useCallback to memoize the callback function, the component only will re-render if the dependencies have changed.
 
 Use useCallback to pass a callback function as a prop to a child component. If the parent component re-renders frequently and the child component doesn't have to re-render each time, this can be useful.
-It is vital to be wary about the dependencies you pass to useCallback, as passing too many or the erroneous dependencies can result in unexpected behavior. It is also critical to ensure that the callback function does not create a new function on each render, as this will prevent the previous and next function from being matched, leading to unnecessary re-renders.
+It is vital to be wary about the dependencies you pass to useCallback, as passing too many or the erroneous dependencies can result in unexpected behavior. It is also critical to ensure that the callback function does not create a new function on each render, as this will prevent the previous and next functions from being matched, leading to unnecessary re-renders.
