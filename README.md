@@ -146,3 +146,4 @@ The main objective of useCallback is to avoid the unnecessary re-creation of cal
 
 Use useCallback to pass a callback function as a prop to a child component. If the parent component re-renders frequently and the child component doesn't have to re-render each time, this can be useful.
 It is vital to be wary about the dependencies you pass to useCallback, as passing too many or the erroneous dependencies can result in unexpected behavior. It is also critical to ensure that the callback function does not create a new function on each render, as this will prevent the previous and next functions from being matched, leading to unnecessary re-renders.
+To learn more vist official docs
